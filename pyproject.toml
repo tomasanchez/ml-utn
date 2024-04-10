@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ml-utn"
+version = "0.1.0"
+description = "Machine Learning"
+authors = ["Tomas Sanchez <info@tomsanchez.com.ar>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "ml_utn" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+lightgbm = "4.3.0"
+matplotlib = "3.8.4"
+pandas = "2.2.2"
+pydantic = "2.6.4"
+scikit-learn = "^1.4.2"
+seaborn = "0.13.2"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "^4.1.6"
+notebook = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
